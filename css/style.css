@@ -1,0 +1,73 @@
+/*  UNIVERSAL SELECTORS  */
+*
+{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+}
+
+/*  CONTAINER  */
+.container
+{
+   margin:auto;
+   width:100%;
+}
+
+/*  ROW  */
+.row
+{  
+   display:flex;
+   flex-wrap:wrap;
+}
+
+/*  IMAGE WIDTH  */
+.image
+{
+	max-width:100%;
+}
+
+/*  HEADING  */
+h2
+{
+  text-align:center;
+  font-family:verdana,sans-serif;
+  color:#425fc9;
+}
+
+/*  PARAGRAPH  */
+p
+{
+	font-family:"veradana", sans-serif;
+	font-size:17px;
+	padding:30px;
+	text-align:center;
+}
+
+/*  COLUMN  */
+.col1
+{
+   width:25%;
+   padding-right:5px;
+}
+.col2
+{
+	position:relative;
+}
+h2::before{
+	content:"";
+	position:absolute;
+	width:50px;
+	height:5px;
+	top:31px;
+	left:48%;	
+	background:blue;
+}
+h2::after{
+	content:"";
+	position:absolute;
+	width:100px;
+	height:1px;
+	top:33px;
+	left:46%;	
+	background: black;
+} 
